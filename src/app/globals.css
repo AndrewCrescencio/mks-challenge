@@ -1,0 +1,38 @@
+:root {
+  --max-width: 1440px;
+  --border-radius: 12px;
+
+  --foreground-rgb: 44, 44, 44;
+  --background-rgb: 249, 249, 249;
+
+  --black-hex: #000;
+  --blue-hex: #0F52BA;
+  --white-hex: #fff;
+  --gray-hex: #eee;
+  --gray-dark-hex: #bfbfbf;
+  
+  --size-tablet: 768px;
+  --size-desktop: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

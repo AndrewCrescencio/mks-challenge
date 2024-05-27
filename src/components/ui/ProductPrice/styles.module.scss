@@ -1,0 +1,12 @@
+.product-price {
+  color: var(--white-hex);
+  background-color: #373737;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 6px;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: max-content;
+}

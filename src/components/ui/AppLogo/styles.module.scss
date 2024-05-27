@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--white-hex);
+  column-gap: 4px;
+  span {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}

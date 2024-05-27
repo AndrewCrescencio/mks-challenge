@@ -1,0 +1,115 @@
+.cart-card {
+  background-color: var(--white-hex);
+  border-radius: 8px;
+  padding: 1em;
+  color: var(--black-hex);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      font-size: 13px;
+    }
+  }
+}
+
+.cart-card__button--removeProduct {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-content: center;
+  border-color: transparent;
+  position: absolute;
+  top: 9px;
+  right: 14px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 0;
+  color: var(--black-hex);
+
+  @media (min-width: 768px) {
+    top: -9px;
+    right: -9px;
+    z-index: 20;
+    color: var(--white-hex);
+    background-color: var(--black-hex);
+    border-radius: 100%;
+
+    width: 18px;
+    height: 18px;
+
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.cart-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.cart-card__price {
+  min-width: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.card-card__quantity {
+  display: flex;
+  align-items: center;
+
+  border: 0.3px solid var(--gray-dark-hex);
+  background-color: var(--white-hex);
+  border-radius: 4px;
+  user-select: none;
+
+  p {
+    border-inline: 0.3px solid var(--gray-dark-hex);
+    padding: 0 0.75em;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 0.5em 0.75em;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 18px;
+    }
+  }
+}

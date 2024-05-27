@@ -1,0 +1,113 @@
+.app-cart {
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
+  background-color: var(--blue-hex);
+  max-height: 100%;
+  height: 100vh;
+  width: 90%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 486px;
+    width: 100%;
+  }
+}
+
+.app-cart__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 16px;
+  @media (min-width: 768px) {
+    padding: 25px 15px 25px 32px;
+  }
+  @media (min-width: 1024px) {
+    padding: 36px 22px 64px 47px;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--white-hex);
+  }
+}
+
+.app-cart__closeButton {
+  background-color: var(--black-hex);
+  border-radius: 50%;
+  font-size: 24px;
+  border: none;
+  color: var(--white-hex);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  height: 42px;
+  width: 42px;
+
+  &:hover {
+    background-color: #262626;
+    cursor: pointer;
+  }
+}
+
+.app-cart__list--container {
+  padding-top: 11px;
+  overflow-y: auto;
+}
+
+.app-cart__list {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  row-gap: 13px;
+  flex: 1;
+  margin: 0 16px;
+  @media (min-width: 768px) {
+    margin: 0 34px;
+    row-gap: 28px;
+  }
+}
+
+.app-cart__total {
+  color: var(--white-hex);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 15px;
+  padding: 20px 16px;
+  margin-top: auto;
+  @media (min-width: 768px) {
+    padding: 44px 28px;
+  }
+}
+
+.app-cart__buyButton {
+  cursor: pointer;
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  color: var(--white-hex);
+  font-weight: 700;
+  font-size: 20px;
+  background-color: var(--black-hex);
+  border-color: transparent;
+  align-self: flex-end;
+  @media (min-width: 768px) {
+    padding: 30px 0;
+    font-size: 28px;
+  }
+}
